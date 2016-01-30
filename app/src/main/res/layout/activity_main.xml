@@ -31,4 +31,45 @@
         android:layout_marginRight="28dp"
         android:layout_marginEnd="28dp"
         android:onClick="audioPause" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mAudioSeekBar"
+        android:layout_above="@+id/mAudioPause"
+        android:layout_toLeftOf="@+id/mAudioPause"
+        android:layout_toStartOf="@+id/mAudioPause"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mProgressSeekBar"
+        android:layout_below="@+id/mAudioPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VolumeBar"
+        android:id="@+id/textView"
+        android:layout_above="@+id/mAudioSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Progress"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/mAudioPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
 </RelativeLayout>
